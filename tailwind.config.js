@@ -11,12 +11,34 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: "2rem",
-      screens: {
-        "2xl": "1400px",
-      },
+      padding: "15px",
+    },
+    screen:{
+      sm:"640px",
+      md:"768px",
+      lg:"960px",
+      xl:"1200px",
+    },
+    colors:{
+      body:'#e5e5e5',
+      white:'#fff',
+      green:{DEFAULT:'#539592',hover:'#40807d'},
+      black:{DEFAULT:'#273029',hover:'#1b211c'},
+      gray:'#888888',
+      orange:{DEFAULT:'#f2994a',hover:'#da863c'},
+      outline:'#f1f1f1',
+      pink:'#ffa5a5',
     },
     extend: {
+      backgroundImage:{
+        hero:'url(/hero/bg.png)',
+        menu:'url(/menu/bg.png)',
+        reservation:'url(/reservation/bg.png)',
+        footer:'url(/footer/bg.png)',
+      },
+      boxShadow:{
+        primary:'40px 4px 40px 0px rgba(68,68,68,0.25)',
+      },
       keyframes: {
         "accordion-down": {
           from: { height: "0" },

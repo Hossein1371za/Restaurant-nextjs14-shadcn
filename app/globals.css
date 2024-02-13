@@ -1,3 +1,36 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: "vazir";
+    src: url("../assets/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Medium.ttf");
+}
+
+@layer base{
+    *{
+        font-family: vazir;
+        direction: rtl;
+    }
+    h1,h2,h3{
+       @apply font-bold; 
+    }
+    h1{
+        @apply text-[62px] leading-[84px]
+    }
+    h1{
+        @apply text-[32px] leading-[46px]
+    }
+    h3{
+        @apply text-[20px] leading-[30px]
+    }
+    p{
+        @apply text-black/80 leading-8
+     }
+     a{
+        @apply text-white hover:text-orange transition-all duration-300 cursor-pointer
+     }
+     label{
+        @apply text-white text-sm uppercase font-normal block mb-2
+     }
+}
