@@ -32,6 +32,7 @@ module.exports = {
     extend: {
       backgroundImage:{
         hero:'url(/hero/bg.png)',
+        hero1:'url(/hero/bg1.png)',
         menu:'url(/menu/bg.png)',
         reservation:'url(/reservation/bg.png)',
         footer:'url(/footer/bg.png)',

@@ -6,11 +6,14 @@
     font-family: "vazir";
     src: url("../assets/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Medium.ttf");
 }
-
+*{
+    font-family: vazir;
+    direction: rtl;
+}
 @layer base{
-    *{
-        font-family: vazir;
-        direction: rtl;
+    
+    body{
+        @apply bg-body text-black tracking-[0.5px]
     }
     h1,h2,h3{
        @apply font-bold; 
