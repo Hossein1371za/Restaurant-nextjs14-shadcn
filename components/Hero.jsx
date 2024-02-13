@@ -7,14 +7,14 @@ import { Button } from "./ui/button";
 const Hero = () => {
   return (
     <section
-      className="bg-hero1 lg:bg-hero bg-no-repeat  bgrota relative md:bg-left xl:bg-cover xl:h-[1098px] py-40 pb-32 xl:py-0"
+      className="bg-hero1 lg:bg-hero bg-no-repeat  bgrota relative  xl:bg-cover xl:h-[1098px] py-40 pb-32 xl:py-0"
       id="home"
     >
       <div className="container mx-auto">
         {/* text and image */}
-        <div>
+        <div className="flex items-center xl:h-[960px]">
             {/* text */}
-          <div className="w-full xl:max-w-[460px] text-center">
+          <div className="w-full xl:max-w-[460px] text-center xl:text-right">
             <h1 className="text-white mb-7">
               رستوران های زنجیره ای <br />
               نکست جی اس
@@ -28,6 +28,13 @@ const Hero = () => {
               در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
               نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
             </p>
+            <div>
+                <Button>شروع سفارش</Button>
+            </div>
+          </div>
+          {/* image */}
+          <div>
+            <Image src="/hero/plate.png" width={756} height={682} alt="."/>
           </div>
         </div>
       </div>
