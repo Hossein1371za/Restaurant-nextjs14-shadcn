@@ -44,21 +44,35 @@ const Hero = () => {
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
               در ستون و سطرآنچنان که لازم است، و برای شرایط فعلی تکنولوژی مورد
-              نیاز، و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
             </motion.p>
-            <div>
+            <motion.div
+              variants={fadeIn("down", 0.8)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ onse: false, amount: 0.4 }}
+            >
               <Button>شروع سفارش</Button>
-            </div>
+            </motion.div>
           </div>
           {/* image */}
-          <div className="hidden xl:flex xl:absolute xl:top-[200] xl:left-0">
-            <Image src="/hero/plate.png" width={756} height={682} alt="." />
-          </div>
+          <motion.div
+          variants={fadeIn('up',0.8)}
+          initial='hidden'
+          whileInView={'show'}
+          viewport={{onse:false,amount:0.1}}
+          className="hidden xl:flex xl:absolute xl:top-[200] xl:left-0">
+            <Image src="/hero/plate.png" width={700} height={682} alt="." />
+          </motion.div>
         </div>
       </div>
-      <div className="hidden xl:flex xl:relative xl:-top-36">
+      <motion.div
+      variants={fadeIn('up',1.2)}
+      initial='hidden'
+      whileInView={'show'}
+      viewport={{onse:false,amount:0.1}}
+      className="hidden xl:flex xl:relative xl:-top-36">
         <Image src="/hero/coffee.png" width={386} height={404} alt="." />
-      </div>
+      </motion.div>
     </section>
   );
 };
