@@ -22,7 +22,7 @@ module.exports = {
       body:'#e5e5e5',
       white:'#fff',
       green:{DEFAULT:'#539592',hover:'#40807d'},
-      black:{DEFAULT:'#273029',hover:'#1b211c'},
+      black:{DEFAULT:'#273029',heavy:'#1b211c'},
       gray:'#888888',
       orange:{DEFAULT:'#f2994a',hover:'#da863c'},
       outline:'#f1f1f1',

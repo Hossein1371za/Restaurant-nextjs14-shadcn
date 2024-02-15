@@ -15,8 +15,18 @@ const Header = () => {
     const handleScroll = () => {
       setActive(window.scrollY) > 100;
     };
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-  return <div>Header</div>;
+  return (
+    <header
+      className={`${active ? "bg-black-heavy py-4" : "bg-none py-8"} text-white fixed top-0 right-0 w-full z-50 left-0 transition-all duration-200`}
+    >
+      
+    </header>
+  );
 };
 
 export default Header;
