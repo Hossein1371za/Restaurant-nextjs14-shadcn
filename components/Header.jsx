@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { Link as ScrollLink } from "react-scroll";
+import Image from "next/image";
 
 import Nav from "./Nav";
 import NavMobile from "./NavMobile";
@@ -22,9 +23,24 @@ const Header = () => {
   }, []);
   return (
     <header
-      className={`${active ? "bg-black-heavy py-4" : "bg-none py-8"} text-white fixed top-0 right-0 w-full z-50 left-0 transition-all duration-200`}
+      className={`${
+        active ? "bg-black-heavy py-4" : "bg-none py-8"
+      } text-white fixed top-0 right-0 w-full z-50 left-0 transition-all duration-200`}
     >
-      
+      <div className="container max-w-[1280px] mx-auto">
+        <div className="flex items-center justify-between">
+          <Link className="z-60" href="/">
+            <Image src="/logo.svg" width={75} height={30} alt="." />
+          </Link>
+          <Nav containerStyles="hidden xl:flex gap-x-12 text-white" />
+          <ScrollLink to="reservation" smooth={true}>
+            <Button variant="orange" size="sm">
+              رزرو میز
+            </Button>
+          </ScrollLink>
+          <NavMobile />
+        </div>
+      </div>
     </header>
   );
 };
