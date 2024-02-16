@@ -25,7 +25,7 @@ const Header = () => {
     <header
       className={`${
         active ? "bg-black-heavy py-4" : "bg-none py-8"
-      } text-white fixed top-0 right-0 w-full z-50 left-0 transition-all duration-200`}
+      } text-white fixed top-0 max-w-[1440px] right-0 w-full mx-auto z-50 left-0 transition-all duration-200`}
     >
       <div className="container max-w-[1280px] mx-auto">
         <div className="flex items-center justify-between">
@@ -38,7 +38,7 @@ const Header = () => {
               رزرو میز
             </Button>
           </ScrollLink>
-          <NavMobile />
+          <NavMobile containerStyles='xl:hidden'/>
         </div>
       </div>
     </header>

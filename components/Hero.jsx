@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 const Hero = () => {
   return (
     <section
-      className="bg-hero1 xl:bg-hero bg-no-repeat relative xl:bg-cover xl:h-[1098px] py-40 pb-32 xl:py-0"
+      className="bg-hero1 xl:bg-hero bg-no-repeat relative xl:bg-cover xl:h-[1020px] py-40 pb-32 xl:py-0"
       id="home"
     >
       <div className="container max-w-[1280px] mx-auto">
@@ -61,7 +61,7 @@ const Hero = () => {
           whileInView={'show'}
           viewport={{onse:false,amount:0.1}}
           className="hidden xl:flex xl:absolute xl:top-[200] xl:left-0">
-            <Image src="/hero/plate.png" width={700} height={682} alt="." />
+            <Image src="/hero/plate.png" width={752} height={682} alt="." />
           </motion.div>
         </div>
       </div>

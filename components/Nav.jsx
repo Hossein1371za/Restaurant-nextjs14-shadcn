@@ -17,7 +17,7 @@ const links = [
   },
   {
     path: "contact",
-    name: "ارتباط با ما",
+    name: "تماس با ما",
     offset: 0,
   },
 ];
