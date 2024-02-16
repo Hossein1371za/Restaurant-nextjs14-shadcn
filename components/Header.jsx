@@ -28,17 +28,17 @@ const Header = () => {
       } text-white fixed top-0 max-w-[1440px] right-0 w-full mx-auto z-50 left-0 transition-all duration-200`}
     >
       <div className="container max-w-[1280px] mx-auto">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-row-reverse xl:flex-row items-center justify-between">
           <Link className="z-60" href="/">
             <Image src="/logo.svg" width={75} height={30} alt="." />
           </Link>
-          <Nav containerStyles="hidden xl:flex gap-x-12 text-white" />
+          <Nav containerStyles="hidden lg:flex gap-x-12 text-white" />
           <ScrollLink to="reservation" smooth={true}>
             <Button variant="orange" size="sm">
               رزرو میز
             </Button>
           </ScrollLink>
-          <NavMobile containerStyles='xl:hidden'/>
+          <NavMobile containerStyles='lg:hidden'/>
         </div>
       </div>
     </header>
