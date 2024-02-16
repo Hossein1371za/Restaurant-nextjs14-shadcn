@@ -37,7 +37,7 @@ const links = [
     offset: 0,
   },
 ];
-const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
+const NavMobile = ({ containerStyles, iconStyles }) => {
   const [openMenu, setOpenMenu] = useState(false);
   return (
     <div className={`${containerStyles}`}>
@@ -69,10 +69,10 @@ const NavMobile = ({ containerStyles, iconStyles, linkStyles }) => {
                   offset={link.offset}
                   smooth={false}
                   key={index}
-                  className="flex items-center gap-x-3 my-3"
+                  className="flex items-center gap-x-3 my-8"
                 >
-                  <div>{link.icon}</div>
-                  <div>{link.name}</div>
+                  <div className={`${iconStyles}`}>{link.icon}</div>
+                  <div className={`${iconStyles}`}>{link.name}</div>
                 </ScrollLink>
               );
             })}

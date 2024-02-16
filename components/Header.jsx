@@ -38,7 +38,7 @@ const Header = () => {
               رزرو میز
             </Button>
           </ScrollLink>
-          <NavMobile containerStyles='lg:hidden'/>
+          <NavMobile containerStyles='lg:hidden' iconStyles="text-3xl"/>
         </div>
       </div>
     </header>

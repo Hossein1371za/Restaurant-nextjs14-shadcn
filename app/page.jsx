@@ -1,3 +1,4 @@
+import Menu from "@/components/Menu";
 import Header from "../components/Header"
 import Hero from "@/components/Hero";
 export default function Home() {
@@ -5,6 +6,7 @@ export default function Home() {
     <main className="w-full max-w-[1440px] bg-white mx-auto overflow-hidden">
       <Header/>
       <Hero/>
+      <Menu/>
       <div className="h-[4000px]"></div>
     </main>
   );
