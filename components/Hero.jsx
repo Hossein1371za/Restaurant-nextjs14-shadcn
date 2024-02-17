@@ -70,7 +70,7 @@ const Hero = () => {
       initial='hidden'
       whileInView={'show'}
       viewport={{onse:false,amount:0.1}}
-      className="hidden xl:flex xl:relative xl:-top-36">
+      className="hidden xl:flex xl:relative xl:-top-56">
         <Image src="/hero/coffee.png" width={386} height={404} alt="." />
       </motion.div>
     </section>
