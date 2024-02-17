@@ -31,16 +31,31 @@ const menu = [
 
 const Menu = () => {
   return (
-    <section className="relative py-12 xl:py-24 lg:bg-menu" id="menu">
+    <section className="relative py-12 xl:py-24 md:bg-menu" id="menu">
       <div className="container max-w-[1280px] mx-auto">
-        <div>
-          <h2>آیتم های محبوب</h2>
-          <Link href="/" className="text-green">
+        <motion.div
+          variants={fadeIn("left", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ onse: false, amount: 0.2 }}
+          className="max-w-[570px] mx-auto text-center xl:text-right"
+        >
+          <h2 className="mb-3">آیتم های محبوب</h2>
+          <Link
+            href="/"
+            className="text-green flex justify-center xl:justify-start items-center mb-16"
+          >
             دیدن همه
-            <IoIosArrowRoundBack />
+            <IoIosArrowRoundBack className="text-3xl " />
           </Link>
-        </div>
-        <div className="grid grid-cols-1 gap-[30px] md:grid-cols-3 md:gap-[15px] xl:grid-cols-4">
+        </motion.div>
+        <motion.div
+          variants={fadeIn("up", 0.4)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ onse: false, amount: 0.2 }}
+          className="grid grid-cols-1 gap-[30px] md:grid-cols-3 md:gap-[15px] xl:grid-cols-4"
+        >
           {menu.map((item, index) => {
             return (
               <div
@@ -67,7 +82,7 @@ const Menu = () => {
               </div>
             );
           })}
-        </div>
+        </motion.div>
       </div>
     </section>
   );

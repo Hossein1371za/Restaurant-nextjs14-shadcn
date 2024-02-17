@@ -7,12 +7,12 @@ import { Button } from "./ui/button";
 const Hero = () => {
   return (
     <section
-      className="bg-hero1 xl:bg-hero bg-no-repeat relative xl:bg-cover xl:h-[1020px] py-40 pb-32 xl:py-0"
+      className="bg-hero1 xl:bg-hero bg-no-repeat relative xl:bg-cover xl:h-[920px] py-40 pb-32 xl:py-0"
       id="home"
     >
       <div className="container max-w-[1280px] mx-auto">
         {/* text and image */}
-        <div className="flex items-center xl:h-[960px]">
+        <div className="flex xl:pt-[120px] xl:h-[860px]">
           {/* text */}
           <div className="w-full xl:max-w-[460px] text-center xl:text-right">
             <motion.h1
@@ -22,8 +22,7 @@ const Hero = () => {
               viewport={{ onse: false, amount: 0.4 }}
               className="text-white mb-7"
             >
-              رستوران های زنجیره ای <br />
-              نکست جی اس
+              رستوران های<br />  زنجیره ای 
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.4)}
@@ -39,7 +38,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ onse: false, amount: 0.4 }}
-              className="text-white mb-12 max-w-lg mx-auto xl:max-w-none xl:mx-0"
+              className="text-white mb-7 max-w-lg mx-auto xl:max-w-none xl:mx-0"
             >
               لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با
               استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله
