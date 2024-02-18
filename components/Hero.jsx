@@ -60,7 +60,7 @@ const Hero = () => {
           whileInView={'show'}
           viewport={{onse:false,amount:0.1}}
           className="hidden xl:flex xl:absolute xl:top-[200] xl:left-0">
-            <Image src="/hero/plate.png" width={752} height={682} alt="." />
+            <Image src="/hero/plate.png" width={702} height={632} alt="." />
           </motion.div>
         </div>
       </div>
