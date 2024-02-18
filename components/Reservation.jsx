@@ -5,15 +5,24 @@ import ReservationForm from "./ReservationForm";
 
 const Reservation = () => {
   return (
-    <section
+    <motion.section
+    variants={fadeIn("up",0.2)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{onse:false,amount:0.2}}
       className="xl:my-32 xl:h-[1020px] xl:bg-reservation xl:bg-no-repeat xl:flex xl:flex-col xl:justify-end xl:items-start"
       id="reservation"
     >
-      <div className="bg-black w-full xl:max-w-[868px] min-h-[518px] p-8 md:m-14 xl:p-16">
+      <motion.div
+      variants={fadeIn("up",0.3)}
+      initial="hidden"
+      whileInView={"show"}
+      viewport={{onse:false,amount:0.2}}
+      className="bg-black w-full xl:max-w-[868px] min-h-[518px] p-8 md:m-14 xl:p-16">
         <h2 className="text-white mb-9">رزرو میز</h2>
         <ReservationForm />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
