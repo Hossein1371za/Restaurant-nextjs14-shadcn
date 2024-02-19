@@ -31,7 +31,7 @@ const menu = [
 
 const Menu = () => {
   return (
-    <section className="relative py-12 xl:py-24 md:bg-menu" id="menu">
+    <section className="relative py-12 xl:py-24 xl:bg-menu" id="menu">
       <div className="container max-w-[1280px] mx-auto">
         <motion.div
           variants={fadeIn("left", 0.3)}
@@ -54,7 +54,7 @@ const Menu = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ onse: false, amount: 0.2 }}
-          className="grid grid-cols-1 gap-[30px] md:grid-cols-3 md:gap-[15px] xl:grid-cols-4"
+          className="grid grid-cols-1 gap-[30px] md:grid-cols-2 md:gap-[15px] xl:grid-cols-4"
         >
           {menu.map((item, index) => {
             return (

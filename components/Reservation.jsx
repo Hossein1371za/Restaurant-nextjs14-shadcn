@@ -18,7 +18,7 @@ const Reservation = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{onse:false,amount:0.2}}
-      className="bg-black  w-full xl:max-w-[868px] min-h-[518px] p-8 md:m-14 md:mx-auto xl:p-16">
+      className="bg-black  w-full xl:max-w-[868px] min-h-[518px] p-8 md:m-14 md:mx-auto xl:mx-0 xl:mb-0 xl:p-16">
         <h2 className="text-white mb-9">رزرو میز</h2>
         <ReservationForm />
       </motion.div>
