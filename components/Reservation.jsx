@@ -10,7 +10,7 @@ const Reservation = () => {
     initial="hidden"
     whileInView={"show"}
     viewport={{onse:false,amount:0.2}}
-      className="xl:my-32 xl:h-[1020px] xl:bg-reservation xl:bg-no-repeat xl:flex xl:flex-col xl:justify-end xl:items-start"
+      className="xl:my-32 xl:h-[1020px] xl:bg-reservation p-8 xl:bg-no-repeat xl:flex xl:flex-col xl:justify-end xl:items-start"
       id="reservation"
     >
       <motion.div
@@ -18,7 +18,7 @@ const Reservation = () => {
       initial="hidden"
       whileInView={"show"}
       viewport={{onse:false,amount:0.2}}
-      className="bg-black w-full xl:max-w-[868px] min-h-[518px] p-8 md:m-14 xl:p-16">
+      className="bg-black  w-full xl:max-w-[868px] min-h-[518px] p-8 md:m-14 md:mx-auto xl:p-16">
         <h2 className="text-white mb-9">رزرو میز</h2>
         <ReservationForm />
       </motion.div>
