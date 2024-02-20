@@ -57,7 +57,7 @@ const Map = () => {
       <MapContainer
         center={[35.7624, 51.3916]}
         zoom={isMobile ? 12 : 13}
-        className={`${isMobile ? "h-[300px]" : "h-[900px]"} z-10`}
+        className={`${isMobile ? "h-[300px]" : "h-[700px]"} z-10`}
         zoomControl={false}
       >
         <TileLayer
