@@ -46,7 +46,14 @@ const Map = () => {
         query:'(max-width:768px',
     })
   return (
-    <section className="mt-10">
+    <motion.section
+    variants={fadeIn("up",0.3)}
+    initial="hidden"
+    whileInView={"show"}
+    viewport={{once:false,amount:0.2}}
+    className="relative xl:after:w-full xl:after:h-[240px]
+    xl:after:bg-gradient-to-b xl:after:from-white xl:after:via-white/80 xl:after:to-white/20
+    xl:after:absolute xl:after:top-0 xl:after:z-20" id="contact">
       <MapContainer
         center={[35.7624, 51.3916]}
         zoom={isMobile ? 12 : 13}
@@ -61,12 +68,12 @@ const Map = () => {
             return(
                 <Marker key={index} position={marker.position} icon={customIcon}>
                     <Popup>
-                        <div>
-                            <div>
+                        <div className="flex gap-x-[30px] p-4">
+                            <div className="flex-1 text-right">
                                 <h3>{marker.title}</h3>
-                                <p>{marker.sutitle}</p>
+                                <p className="leading-snug">{marker.sutitle}</p>
                             </div>
-                            <div>
+                            <div className="flex-1">
                                 <Image src={marker.image} width={130} height={160} alt="."/>
                             </div>
                         </div>
@@ -75,7 +82,7 @@ const Map = () => {
             )
         })}
       </MapContainer>
-    </section>
+    </motion.section>
   );
 };
 

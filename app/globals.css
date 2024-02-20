@@ -6,41 +6,56 @@
     font-family: "vazir";
     src: url("../assets/vazirmatn-v33.003/fonts/ttf/Vazirmatn-Medium.ttf");
 }
+
 @font-face {
     font-family: "vazir-digits";
     src: url("../assets/vazirmatn-v33.003/misc/Farsi-Digits/fonts/ttf/Vazirmatn-FD-Black.ttf");
 }
-*{
+
+* {
     font-family: vazir;
     direction: rtl;
 }
-.number{
+
+.number {
     font-family: vazir-digits;
 }
-@layer base{
-    
-    body{
+
+@layer base {
+
+    body {
         @apply bg-body text-black tracking-[0.5px]
     }
-    h1,h2,h3{
-       @apply font-bold; 
+
+    h1, h2, h3 {
+        @apply font-bold;
     }
-    h1{
+
+    h1 {
         @apply text-[62px] leading-[84px]
     }
-    h2{
+
+    h2 {
         @apply text-[32px] leading-[46px]
     }
-    h3{
+
+    h3 {
         @apply text-[20px] leading-[30px]
     }
-    p{
+
+    p {
         @apply text-black/80 leading-8
-     }
-     a{
+    }
+
+    a {
         @apply text-white hover:text-orange transition-all duration-300 cursor-pointer
-     }
-     label{
+    }
+
+    label {
         @apply text-white text-sm uppercase font-normal block mb-2
-     }
+    }
+
+    .active {
+        @apply text-orange
+    }
 }
